@@ -1,0 +1,7 @@
+FROM infracloudio/csvserver:latest
+
+WORKDIR /csvserver/
+
+COPY gencsv.sh /csvserver/
+
+RUN /bin/bash /csvserver/gencsv.sh
